@@ -4,6 +4,24 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
+ const scrollToProjects = () => {
+  const projectsSection = document.getElementById("projects");
+  if (projectsSection) {
+   projectsSection.scrollIntoView({ behavior: "smooth" });
+  }
+ };
+
+ // Function to handle resume download
+ const handleDownloadResume = () => {
+  const resumeUrl = "src/assets/cv/CV_christopher_tonnesland.pdf";
+  const link = document.createElement("a");
+  link.href = resumeUrl;
+  link.setAttribute("download", "Christopher_Tonnesland_CV.pdf");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+ };
+
  return (
   <section className="pt-32 pb-20 md:pt-40 md:pb-32 min-h-screen flex items-center">
    <div className="container mx-auto px-4">
@@ -37,11 +55,12 @@ export const Hero = () => {
     </motion.p>
 
     <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.6 }} className="flex flex-wrap gap-4">
-     <Button className="bg-emerald-500 hover:bg-emerald-600 text-white">
+     <Button className="bg-emerald-500 hover:bg-emerald-600 text-white" onClick={scrollToProjects}>
       Check out my work
       <ArrowRight className="ml-2 h-4 w-4" />
      </Button>
-     <Button variant="outline" className="border-zinc-300 dark:border-zinc-700">
+
+     <Button variant="outline" className="border-zinc-300 dark:border-zinc-700" onClick={handleDownloadResume}>
       View Resume
      </Button>
     </motion.div>
