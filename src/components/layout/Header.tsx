@@ -20,8 +20,8 @@ export function Header() {
   <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border-b border-zinc-200 dark:border-zinc-800">
    <div className="container mx-auto px-4 py-4 flex items-center justify-between">
     <Link to="#" className="text-xl font-mono font-bold">
-     <span className="text-emerald-500">dev</span>
-     <span className="dark:text-zinc-100">Chris</span>
+     <span className="text-emerald-500">chris</span>
+     <span className="dark:text-zinc-100">Dev</span>
      <span className="animate-blink">_</span>
     </Link>
     <nav className="hidden md:flex items-center space-x-8">
