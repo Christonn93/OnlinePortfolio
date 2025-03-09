@@ -51,8 +51,7 @@ export const Hero = () => {
     </motion.h2>
 
     <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.4 }} className="text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mb-8">
-     I'm a <b>Front-End Engineer</b> based in <b>Larvik, Norway</b>, passionate about building <b>modern, high-performance, and accessible</b> web applications. Currently working at{" "}
-     <b>Gjensidige Mobility Group</b>, where I specialize in <b>React, TypeScript, and UI/UX</b> to craft intuitive digital experiences.
+     I'm a <b>Front-End Engineer</b> based in <b>Larvik, Norway</b>, passionate about building <b>modern, high-performance, and accessible</b>
     </motion.p>
 
     <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.6 }} className="flex flex-wrap gap-4">
