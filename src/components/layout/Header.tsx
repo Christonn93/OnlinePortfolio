@@ -21,7 +21,7 @@ export function Header() {
    <div className="container mx-auto px-4 py-4 flex items-center justify-between">
     <Link to="#" className="text-xl font-mono font-bold">
      <span className="text-emerald-500">dev</span>
-     <span className="dark:text-zinc-100">john</span>
+     <span className="dark:text-zinc-100">Chris</span>
      <span className="animate-blink">_</span>
     </Link>
     <nav className="hidden md:flex items-center space-x-8">

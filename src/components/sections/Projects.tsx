@@ -36,14 +36,22 @@ export function Projects() {
          ))}
         </ul>
         <div className={`flex gap-4 ${index % 2 === 1 ? "md:justify-end" : ""}`}>
-         <Button variant="ghost" size="icon" className="hover:text-emerald-500">
-          <Github className="h-5 w-5" />
-          <span className="sr-only">GitHub</span>
-         </Button>
-         <Button variant="ghost" size="icon" className="hover:text-emerald-500">
-          <ExternalLink className="h-5 w-5" />
-          <span className="sr-only">External Link</span>
-         </Button>
+         {project.links?.github && (
+          <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+           <Button variant="ghost" size="icon" className="hover:text-emerald-500">
+            <Github className="h-5 w-5" />
+            <span className="sr-only">GitHub</span>
+           </Button>
+          </a>
+         )}
+         {project.links?.live && (
+          <a href={project.links.live} target="_blank" rel="noopener noreferrer">
+           <Button variant="ghost" size="icon" className="hover:text-emerald-500">
+            <ExternalLink className="h-5 w-5" />
+            <span className="sr-only">External Link</span>
+           </Button>
+          </a>
+         )}
         </div>
        </div>
       </div>

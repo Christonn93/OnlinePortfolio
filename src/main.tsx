@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.tsx";
 import { ThemeProvider } from "./theme/ThemeProvider.tsx";
 import { HelmetProvider } from "./components/providers/HelmetProvider.tsx";
+import { ToastContainer } from "react-toastify";
 
 createRoot(document.getElementById("root")!).render(
  <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById("root")!).render(
    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
     <BrowserRouter>
      <App />
+     <ToastContainer position="bottom-right" />
     </BrowserRouter>
    </ThemeProvider>
   </HelmetProvider>
