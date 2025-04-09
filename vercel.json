@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/**/*.js",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/contact/client/clientQuestionForm",
+      "dest": "/index.html"
+    }
+  ]
+}
