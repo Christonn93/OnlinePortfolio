@@ -63,6 +63,7 @@ export function Header() {
       <Link to="#contact" className="text-sm hover:text-emerald-500 transition-colors" onClick={() => setIsMenuOpen(false)}>
        <span className="text-emerald-500 font-mono">04.</span> Contact
       </Link>
+      <Link to="/contact/client/clientQuestionForm" className="hidden"></Link>
      </div>
     </div>
    )}
