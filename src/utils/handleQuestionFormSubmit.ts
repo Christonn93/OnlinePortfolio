@@ -23,7 +23,7 @@ interface FormikHelpers {
 }
 
 export const handleQuestionFormSubmit = async (values: FormValues, { setSubmitting, resetForm }: FormikHelpers) => {
-  const RECIPIENT_EMAILS = import.meta.env.VITE_RECIPIENT_EMAILS;
+  const RECIPIENT_EMAILS = process.env.VITE_RECIPIENT_EMAILS;
 
   try {
     // Generate the HTML content dynamically based on the form data

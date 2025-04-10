@@ -14,7 +14,7 @@ interface UseHandleFormSubmitProps {
  setIsOpen: (open: boolean) => void;
 }
 
-const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY as string);
+const resend = new Resend(process.env.VITE_RESEND_API_KEY as string);
 
 export const useHandleFormSubmit = ({ setIsOpen }: UseHandleFormSubmitProps) => {
  const [isSubmitting, setIsSubmitting] = useState(false);

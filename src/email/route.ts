@@ -1,7 +1,7 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import axios from "axios";
 
-const RESEND_API_KEY = import.meta.env.VITE_RESEND_API_KEY;
+const RESEND_API_KEY = process.env.VITE_RESEND_API_KEY;
 const sendEmail = async (html: string, subject: string, to: string[]) => {
   try {
     const response = await axios.post(
