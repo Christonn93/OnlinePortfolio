@@ -47,7 +47,7 @@ export const handleQuestionFormSubmit = async (values: FormValues, { setSubmitti
     const recipients = RECIPIENT_EMAILS;
 
     // Send the form data to your Vercel function
-    const response = await axios.post("/api/send", {
+    const response = await axios.post("/email/route.ts", {
       htmlContent,
       subject,
       recipients,
