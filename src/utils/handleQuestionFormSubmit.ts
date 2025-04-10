@@ -23,7 +23,7 @@ interface FormikHelpers {
 }
 
 export const handleQuestionFormSubmit = async (values: FormValues, { setSubmitting, resetForm }: FormikHelpers) => {
-  const RECIPIENT_EMAILS = import.meta.env.VITE_RECIPIENT_EMAILS;
+  const RECIPIENT_EMAILS = import.meta.env.RECIPIENT_EMAILS;
 
   try {
     // Generate the HTML content dynamically based on the form data
@@ -47,7 +47,9 @@ export const handleQuestionFormSubmit = async (values: FormValues, { setSubmitti
     const recipients = RECIPIENT_EMAILS;
 
     // Send the form data to your Vercel function
-    const response = await axios.post("/api/email/route", {
+    const apiUrl = import.meta.env.MODE === "development" ? "http://localhost:3000/api/email/route" : "/api/email/route";
+
+    const response = await axios.post(apiUrl, {
       htmlContent,
       subject,
       recipients,

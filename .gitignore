@@ -23,3 +23,5 @@ public/php/.env.php
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
