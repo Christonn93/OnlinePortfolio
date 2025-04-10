@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "src/email/route.ts",
-      "use": "@vercel/node"
-    }
-  ]
-}
