@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/api/send.ts",
+      "src": "src/email/route.ts",
       "use": "@vercel/node"
     }
   ]
