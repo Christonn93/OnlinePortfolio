@@ -1,20 +1,20 @@
 {
   "form": {
     "clientQuestionnaire": "Spørreskjema",
-    "instructions": "Vennligst fyll ut skjemaet under for å hjelpe oss med å forstå dine behov bedre. Alle feltene er obligatoriske med mindre annet er notert. Vi vil komme tilbake til deg innen 1-2 virkedager.",
+    "instructions": "Vennligst fyll ut skjemaet under for å hjelpe oss med å forstå dine behov bedre. Alle feltene er obligatoriske med mindre annet er oppgitt. Vi svarer normalt innen 1–2 virkedager.",
     "fullName": "Fullt navn",
     "email": "E-post",
     "phone": "Telefonnummer",
     "organization": "Organisasjon / Firmanavn",
     "currentWebsite": "Nåværende nettside (hvis noen)",
-    "description": "Beskriv kort din virksomhet/organisasjon",
-    "goal": "Hovedmål for nettsiden",
-    "mainAction": "Hva er den ene viktige handlingen du vil at besøkende skal ta?",
-    "functionality": "Trenger du noen spesielle funksjoner?",
-    "designInspo": "Noen nettsider du liker/ikke liker design på?",
+    "description": "Beskriv kort virksomheten eller organisasjonen din",
+    "goal": "Hva er hovedmålet med nettsiden?",
+    "mainAction": "Hva er den viktigste handlingen du ønsker at besøkende skal ta?",
+    "functionality": "Er det noen spesielle funksjoner du trenger?",
+    "designInspo": "Er det nettsider du liker eller ikke liker designet på?",
     "deadline": "Ønsket lanseringsdato",
-    "budget": "Budsjettområde (Valgfritt)",
-    "notes": "Ytterligere notater",
+    "budget": "Budsjettområde (valgfritt)",
+    "notes": "Andre kommentarer eller behov",
     "submit": "Send inn",
     "formErrors": {
       "invalidEmail": "Ugyldig e-postadresse",
@@ -26,27 +26,27 @@
     }
   },
   "workMelodics": {
-    "title": "Metodisk tilnærming til kostnadseffektive og skalerbare løsninger",
-    "workingMethod": "Jeg tror på å levere effektive og kostnadseffektive løsninger for å sikre at du får mest mulig ut av prosjektet ditt uten unødvendige utgifter. Min tilnærming fokuserer på enkelhet, fleksibilitet og skalerbarhet. I stedet for å velge overdrevent komplekse løsninger som krever kontinuerlige oppdateringer og vedlikehold, foretrekker jeg å implementere systemer som er enkle å administrere og tilpasse til dine voksende behov.",
+    "title": "Vår tilnærming til kostnadseffektive og skalerbare løsninger",
+    "workingMethod": "Vi fokuserer på å levere løsninger som er enkle å bruke, rimelige i drift og enkle å tilpasse når behovene dine endres. Vi unngår unødvendig komplekse systemer som krever mye vedlikehold. I stedet prioriterer vi løsninger som gir deg kontroll, fleksibilitet og lavere kostnader over tid.",
     "hostingOptions": {
       "domeneshop": {
         "title": "Domeneshop",
-        "description": "For domene anbefaler jeg Domeneshop, som tilbyr pålitelige og kostnadseffektive løsning."
+        "description": "For kjøp og administrasjon av domener anbefaler vi Domeneshop. De tilbyr stabile og rimelige tjenester som passer de fleste behov."
       },
       "strapi": {
         "title": "Strapi",
-        "description": "For innholdshåndtering bruker jeg Strapi, som er en moderne og fleksibel headless CMS-løsning. Den er enkel å bruke og gir deg muligheten til å administrere innholdet ditt uten teknisk ekspertise."
+        "description": "Til innholdshåndtering bruker vi Strapi, et brukervennlig system som gjør det enkelt å redigere og publisere innhold uten teknisk erfaring."
       },
       "render": {
         "title": "Render",
-        "description": "For backend-håndtering bruker jeg Render, som tilbyr en gratis plan for små prosjekter. Hvis prosjektet vokser, kan vi enkelt oppgradere til en betalt plan med ekstra ressurser."
+        "description": "Vi bruker Render til backend-drift. Render tilbyr en gratis plan som er perfekt for mindre prosjekter, og gjør det enkelt å oppgradere ved behov."
       },
       "vercel": {
         "title": "Vercel",
-        "description": "For frontend bruker jeg vanligvis Vercel, som også tilbyr en gratis plan som dekker de fleste behov for en enkel statisk nettside. Dette betyr at hosting av nettstedet ditt kan forbli helt gratis, uten skjulte kostnader."
+        "description": "For frontend og hosting av nettsiden bruker vi vanligvis Vercel. Det er en pålitelig plattform som tilbyr gratis hosting for enkle, statiske nettsider – uten skjulte kostnader."
       }
     },
-    "techApproach": "Mitt mål er alltid å sikre at teknologistakken som brukes til prosjektet ditt er effektiv og bærekraftig på lang sikt, uten å gjøre ting unødvendig kompliserte. For eksempel er WordPress kanskje ikke den beste løsningen for dine behov. Selv om det er et populært valg for mange, kan det være unødvendig komplekst for prosjekter som ikke krever avanserte funksjoner. WordPress krever også kontinuerlig vedlikehold og oppdateringer, noe som kan føre til potensielle sikkerhetsrisikoer hvis det ikke vedlikeholdes regelmessig.",
-    "streamlinedSolution": "I stedet foretrekker jeg å bruke mer strømlinjeformede løsninger som Strapi for å håndtere innhold, kombinert med en enkel statisk nettside. Denne tilnærmingen gjør det lettere å administrere nettstedet og tilpasse det i fremtiden etter hvert som behovene dine endres, uten belastningen med kontinuerlige oppdateringer eller sikkerhetsrisikoer."
+    "techApproach": "Vi setter alltid sammen en teknisk løsning som er tilpasset deg, med tanke på brukervennlighet, sikkerhet og fremtidig vekst. Vi unngår løsninger som krever hyppige oppdateringer og vedlikehold – for eksempel WordPress – med mindre det er et tydelig behov for det. Mange prosjekter fungerer bedre med en enklere og mer moderne tilnærming.",
+    "streamlinedSolution": "Ved å kombinere en statisk nettside med et fleksibelt publiseringssystem, får du en løsning som er trygg, rask og enkel å videreutvikle."
   }
 }
