@@ -21,7 +21,7 @@ const sendEmail = async (html: string, subject: string, to: string[]) => {
     );
     return response.data;
   } catch (error) {
-    console.error("Email sending failed:", error);
+    console.error("Email sending failed:", error.response?.data || error.message);
     throw new Error("Failed to send email");
   }
 };
@@ -35,6 +35,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const { htmlContent, subject, recipients } = req.body;
 
     if (!htmlContent || !subject || !recipients) {
+      console.error("Missing required parameters:", { htmlContent, subject, recipients });
       return res.status(400).json({ error: "Missing required parameters" });
     }
 
@@ -42,6 +43,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const response = await sendEmail(htmlContent, subject, recipients);
       return res.status(200).json(response);
     } catch (error: unknown) {
+      console.error("Error sending email:", error);
       const errorMessage = error instanceof Error ? error.message : "An unknown error occurred";
       return res.status(500).json({ error: errorMessage });
     }
