@@ -1,0 +1,38 @@
+{
+  "form": {
+    "clientQuestionnaire": "Client Questionnaire",
+    "instructions": "Please fill out the form below to help us understand your needs better. All fields are required unless otherwise noted. We will get back to you within 1-2 business days.",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "organization": "Organization / Business Name",
+    "currentWebsite": "Current Website (if any)",
+    "description": "Briefly describe your business/organization",
+    "goal": "Main goal for your website",
+    "mainAction": "What’s the one key action you want visitors to take?",
+    "functionality": "Do you need any special functionality?",
+    "designInspo": "Any websites you like/dislike for design?",
+    "deadline": "Ideal Launch Date",
+    "budget": "Budget Range (Optional)",
+    "notes": "Additional Notes",
+    "submit": "Submit",
+    "formErrors": {
+      "invalidEmail": "Invalid email address",
+      "required": "This field is required",
+      "invalidURL": "Invalid URL",
+      "messageRequired": "Message is required",
+      "emailRequired": "Email is required",
+      "spamDetected": "Spam detected"
+    }
+  },
+  "workMelodics": {
+    "workingMethod": "I believe in delivering efficient, cost-effective solutions to ensure that you get the most out of your project without unnecessary expenses. My approach focuses on simplicity, flexibility, and scalability. Rather than opting for overly complex solutions that require constant updates and maintenance, I prefer to implement systems that are easy to manage and adapt to your growing needs.",
+    "hostingOptions": {
+      "domeneshop": "Domeneshop: If you purchase your domain there without web hosting, you can still get an affordable hosting solution. This allows us to keep costs low while still ensuring reliable performance.",
+      "render": "Render: For backend management, I use Render, which offers a free plan for small projects like yours. If the project grows, we can scale up with minimal costs (around 50 NOK/month for extra resources).",
+      "vercel": "Vercel: For the frontend, I typically use Vercel, which also offers a free plan that covers most needs for a simple static website. This means your website's hosting can remain completely free, with no hidden costs."
+    },
+    "techApproach": "My goal is always to ensure that the technology stack used for your project is efficient and sustainable in the long term, without overcomplicating things. For example, WordPress might not be the best solution for your needs. While it’s a popular choice for many, it can be unnecessarily complex for projects that don't require advanced features. WordPress also demands ongoing maintenance and updates, which can lead to potential security risks if not regularly managed.",
+    "streamlinedSolution": "Instead, I prefer using more streamlined solutions like **Strapi** for managing content, paired with a simple static site. This approach makes it easier to manage the website and adapt it in the future as your needs change, without the overhead of constant updates or security risks."
+  }
+}

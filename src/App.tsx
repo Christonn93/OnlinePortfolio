@@ -7,7 +7,7 @@ import { ClientFormHeader } from "./components/layout/ClientFormHeader";
 
 function App() {
  const location = useLocation();
- const isClientFormRoute = location.pathname === "/contact/client/clientQuestionForm"; // Check if we're on the client form route
+ const isClientFormRoute = location.pathname === "/contact/client/clientQuestionForm";
 
 
  return (

@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import { ThemeProvider } from "./theme/ThemeProvider.tsx";
 import { HelmetProvider } from "./components/providers/HelmetProvider.tsx";
 import { ToastContainer } from "react-toastify";
+import "./i18n.ts";
 
 createRoot(document.getElementById("root")!).render(
  <StrictMode>
