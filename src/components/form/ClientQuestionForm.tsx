@@ -13,12 +13,10 @@ const ClientQuestionForm = () => {
 
   return (
     <div className="p-10">
-      <div className="flex flex-col justify-between mb-6 mt-6 mx-auto max-w-7xl">
+    <div className="flex flex-col justify-between mx-auto max-w-7xl p-10">
         <div className="mb-10">
           <h1 className="text-2xl font-bold mb-4">{t("form.clientQuestionnaire")}</h1>
           <p>{t("form.instructions")}</p>
-
-          <WorkMelodics />
         </div>
 
         <Formik initialValues={ClientQuestionFormInitialValues} validationSchema={clientQuestionValidationSchema(t)} onSubmit={handleQuestionFormSubmit}>
@@ -97,6 +95,8 @@ const ClientQuestionForm = () => {
           )}
         </Formik>
       </div>
+
+      <WorkMelodics />
     </div>
   );
 };
