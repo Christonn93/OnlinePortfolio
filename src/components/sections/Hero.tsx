@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ResumePdf from "/src/assets/cv/Resume-cv.pdf";
 
 export const Hero = () => {
  const scrollToProjects = () => {
@@ -12,15 +13,16 @@ export const Hero = () => {
  };
 
  // Function to handle resume download
- const handleDownloadResume = () => {
-  const resumeUrl = "src/assets/cv/CV_christopher_tonnesland.pdf";
-  const link = document.createElement("a");
-  link.href = resumeUrl;
-  link.setAttribute("download", "Christopher_Tonnesland_CV.pdf");
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
- };
+const handleDownloadResume = () => {
+    // Use the imported variable as the URL
+    const resumeUrl = ResumePdf; 
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.setAttribute("download", "Christopher_Tonnesland_CV.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
  return (
   <section className="pt-32 pb-20 md:pt-40 md:pb-32 min-h-screen flex items-center">
